@@ -238,4 +238,9 @@ return [
         'var_page'  => 'page',
         'list_rows' => 15,
     ],
+
+     // 路径配置
+    'view_replace_str'      =>[
+        '__PUBLIC_PIPACKER__' =>'/pipacker/public/static'
+    ],
 ];
