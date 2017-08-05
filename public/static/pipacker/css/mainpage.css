@@ -1,0 +1,36 @@
+/*复位样式*/
+html,body {
+    background: #101010;
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 13px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+ul{
+	padding: 0px;
+}
+
+/*工具箱*/
+.float_left{
+	float: left;
+}
+.float_rigth{
+	float: right;
+}
+.text_center{
+	text-align: center;
+}
+.clear{
+	clear:both;
+}
+.imgwidth{
+	width: 100%;
+}
