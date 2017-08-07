@@ -35,10 +35,7 @@ ul{
 	width: 100%;
 }
 
-/*导航条样式*/
-.pp_header{
-	background: black;
-	padding:13px 0px;
+
 /*导航条样式*/
 .pp_header{
 	background: black;
@@ -50,6 +47,7 @@ ul{
 	width:100%;
 	color:#aaa;
 	z-index: 2;
+}
 .logo h2{
 	margin: 0;
 	font-weight:100;
