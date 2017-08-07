@@ -34,29 +34,22 @@ ul{
 .imgwidth{
 	width: 100%;
 }
-<<<<<<< HEAD
 
 /*导航条样式*/
 .pp_header{
 	background: black;
 	padding:13px 0px;
-=======
 /*导航条样式*/
 .pp_header{
 	background: black;
 	padding:20px 0px;
->>>>>>> 510776b0aea3a8c096da28e8788f773c3de4d6d7
 	color: #fff;
 	font-size: 20px;
 	position: fixed;
 	top:0px;
 	width:100%;
 	color:#aaa;
-<<<<<<< HEAD
 	z-index: 2;
-=======
->>>>>>> 510776b0aea3a8c096da28e8788f773c3de4d6d7
-}
 .logo h2{
 	margin: 0;
 	font-weight:100;
