@@ -14,6 +14,9 @@
 			list-style: none;
 			padding:0;
 		}
+		input:focus{
+			outline:none;
+		}
 		html,body{
 			background: #e9e9e9;
 		}
@@ -31,13 +34,21 @@
 			margin:0 100px;
 			border-bottom:1px solid black; 
 		}
-		.pgskill_nav>ul>li:hover{
+		.pgskill_nav>ul>li a:hover{
 			color: red;
-			border-bottom:1px solid red; 
+			border-bottom: 0px;
+		}
+		.pgskill_nav>ul>li:hover{
+			border-color: red;
 		}
 		.pgskill_nav .pgskill_nav_active{
-			color:red;
 			border-bottom:1px solid red;
+		}
+		.pgskill_nav .pgskill_nav_active a{
+			color:red;
+		}
+		.pgskill_nav a{
+			color: black;
 		}
 		.skill_mune_down li{
 			color:#aaa;
@@ -78,8 +89,8 @@
 	{include file="common/navigation"}
 	<nav class="pgskill_nav">
 		<ul>
-			<li class="pgskill_nav_active">最新</li>
-			<li>最热</li>
+			<li class="pgskill_nav_active"><a href="#" >最新</a></li>
+			<li><a href="#" aria-controls="home" role="tab" data-toggle="tab">最热</a></li>
 			<!-- <li>动态视觉</li>
 			<li>基础理论</li> -->
 			<!-- <li>
@@ -104,48 +115,15 @@
 	</nav>
 	<div class="pgskill_content">
 		<ul>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
-			<li>
-				<div class="pgskil_content_img">
-					<img src="__PUBLIC_PIPACKER__/pipacker/images/bg.jpg" alt="">
-					<h3>Waiting for the Miracle</h3>
-					<p>Matjaz Cater</p>
-				</div>
-			</li>
+			{foreach $pp_list as $item}
+				<li>
+					<div class="pgskil_content_img">
+						<img src="__PUBLIC_PIPACKER__/{$item['content_pic']}" alt="">
+						<h3>Waiting for the Miracle</h3>
+						<p>Matjaz Cater</p>
+					</div>
+				</li>
+			{/foreach}
 		</ul>
 	</div>
 </body>
