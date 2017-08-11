@@ -6,6 +6,9 @@
 	<link rel="stylesheet" href="__PUBLIC_PIPACKER__/pipacker/libarary/Bootstrap3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="__PUBLIC_PIPACKER__/pipacker/css/mainpage.css?1">
 	<style type="text/css">
+		:focus {
+			outline: none;
+		}
 		.head_bg {
 			/*display: block;*/
 		    width: 100%;
@@ -63,9 +66,10 @@
 			background: #fff;
     		color: #000;
 		}
-		.head_info .follow {
+		.head_info .follow , .save_intro{
 			display: inline-block;
             float: right;
+            border: none;
             padding: 3px 0px 0px 0px;
             color: #ddd;
             box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
@@ -91,7 +95,7 @@
             vertical-align: middle;
             /*margin-right: 40px;*/
 		}
-		.head_info .follow:hover {
+		.head_info .follow:hover, .save_intro:hover {
 			color: #fff;
 		}
 		.container .show_img_list{
@@ -186,6 +190,105 @@
 		    left: 50%;
 		    margin-left: -13px;
 		}
+		.createInt {
+			display: block;
+			border: none;
+            padding: 3px 0px 0px 0px;
+            color: #ddd;
+            box-shadow: inset 0 1px 1px 0 rgba(255,255,255,0.2), 0 1px 2px 0 rgba(0,0,0,0.4);
+            text-align: center;
+            font-size: 12px;
+            padding: 12px 20px 10px;
+            position: relative;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.7);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            cursor: pointer;
+            background: #262626;
+            background: -moz-linear-gradient(top,#262626 0%,#1c1c1c 100%);
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#262626),color-stop(100%,#1c1c1c));
+            background: -webkit-linear-gradient(top,#262626 0%,#1c1c1c 100%);
+            background: -o-linear-gradient(top,#262626 0%,#1c1c1c 100%);
+            background: -ms-linear-gradient(top,#262626 0%,#1c1c1c 100%);
+            background: linear-gradient(to bottom,#262626 0%,#1c1c1c 100%);
+            padding: 8px 13px;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            margin: 30px auto;
+            margin-bottom: 0;
+		}
+		.save_intro {
+			margin-bottom: 10px;
+		}
+		.createInt:hover {
+			color: #fff;
+		}
+		.introduction_text {
+			width: 100%;
+			height: 500px;
+			padding: 10px;
+         	border: 1px solid #252525;
+          	background: #151515;
+          	color: #ddd;
+         	font-size: 15px;
+         	resize:none;
+		}
+		.introduction_text:focus {
+          color: #fff;
+          border: 1px solid #252525;
+          outline: none;
+        }
+		.comment {
+			padding-bottom: 50px;
+			border-bottom: 1px solid #3a3a3a;
+		}
+		.comment .guestbook {
+			text-align: center;
+			margin: 40px 0 30px 0;
+			display: block;
+		}
+		.comment_text {
+          resize:none;
+          width: 100%;
+          height: 80px;
+          padding: 10px;
+          border: 1px solid #252525;
+          background: #151515;
+          color: #ddd;
+          font-size: 15px;
+        }
+        .comment_text:focus {
+          color: #fff;
+          border: 1px solid #252525;
+          outline: none;
+        }
+        .comment_text_btn {
+          display: inline-block;
+          margin-top: 10px;
+          color: #ddd;
+          background: #262626;
+          padding: 5px 20px;
+          font-size: 14px;
+          border-radius: 4px;
+          border: none;
+          opacity: 0.7;
+        }
+        .comment_text_btn:focus {
+          outline: none;
+        }
+        .comment_container {
+          padding-top: 25px;
+        }
+        .comment_container .comment_connent {
+          margin-bottom: 15px;
+        }
+        .comment_container .media-left>img {
+          width: 40px;
+          box-shadow: #000 0px 0px 10px;
+          border-radius: 5px;
+          height: 40px;
+        }
 	</style>
 	<script src="__PUBLIC_PIPACKER__/pipacker/libarary/Bootstrap3.3.7/js/jquery-1.11.1.min.js"></script>
 	<script src="__PUBLIC_PIPACKER__/pipacker/libarary/Bootstrap3.3.7/js/bootstrap.min.js"></script>
@@ -201,7 +304,7 @@
 				<div class="head_photo">
 					<img src="__PUBLIC_PIPACKER__/pipacker/images/18.jpg">
 				</div>
-				<span class="user_name">摄影师</span>
+				<span class="user_name">摄影师不加鸡腿</span>
 			</div>
 			<div class="col-md-3"></div>
 			<div class="col-md-4">
