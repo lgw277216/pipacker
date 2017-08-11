@@ -9,7 +9,21 @@ html,body {
     font-size: 13px;
 }
 a{
+	color:#aaa;
 	text-decoration: none;
+}
+a:hover{
+	color:#fff;
+	text-decoration:none; 
+}
+a:focus{
+	color:#fff;
+	text-decoration:none; 
+	outline: none;
+}
+:focus{
+	text-decoration:none; 
+	outline: none;
 }
 li{
 	list-style: none;
@@ -44,6 +58,7 @@ ul{
 	top:0px;
 	width:100%;
 	color:#aaa;
+	z-index: 2;
 }
 .logo h2{
 	margin: 0;

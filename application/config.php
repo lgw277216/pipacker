@@ -241,6 +241,7 @@ return [
 
      // 路径配置
     'view_replace_str'      =>[
-        '__PUBLIC_PIPACKER__' =>'/public/static'
+        '__PUBLIC_PIPACKER__' =>'/public/static',
+        '__PUBLIC__' => '/public/pipacker'
     ],
 ];
