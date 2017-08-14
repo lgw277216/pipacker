@@ -82,6 +82,10 @@ ul{
     width: 80%;
     box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
 }
+.support span{
+	margin:0 2px;
+	cursor: pointer;
+}
 .mune ul li{
 	display: inline-block;
 	font-size: 13px;
@@ -95,3 +99,13 @@ ul{
 .mune .pp_down_menu>ul>li:hover{
 	color: #000;
 }
+ul.nav_more{
+	background: #161616;
+}
+ul.nav_more li a{
+	color:#aaa;
+}
+ul.nav_more li a:hover{
+	color:#fff;
+	background: transparent;	
+}   
