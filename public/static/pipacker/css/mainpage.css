@@ -48,6 +48,8 @@ ul{
 .imgwidth{
 	width: 100%;
 }
+
+
 /*导航条样式*/
 .pp_header{
 	background: black;
@@ -89,7 +91,7 @@ ul{
 .mune ul li{
 	display: inline-block;
 	font-size: 13px;
-	padding:5px 20px;
+	padding:4px 20px;
 	cursor:pointer;
 	color: #aaa;
 }
