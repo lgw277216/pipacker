@@ -4,7 +4,7 @@
 	/**
 	* 
 	*/
-	class Impression extends Controller
+	class Release extends Controller
 	{
 		
 		public function index()
